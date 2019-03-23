@@ -1,0 +1,46 @@
+@model MovieViewModel
+
+@{
+    ViewData["Title"] = "Cinema Billboard";
+}
+
+<div class="panel panel-default todo-panel">
+  <div class="panel-heading">@ViewData["Title"]</div>
+
+  <table class="table table-hover">
+      <thead>
+          <tr>
+              <td>Subtitles?</td>
+              <td>Title</td>
+              <td>Screen Time</td>
+              <td>Discount</td>
+              <td>Price</td>
+          </tr>
+      </thead>
+
+      @foreach (var item in Model.Items)
+      {
+          <tr>
+              <td>
+                @if (item.HasSubtitles == true) {
+                    <p>Yes</p>
+                } else{
+                    <p>No</p>
+                }
+              </td>
+              <td>@item.Title</td>
+              <td>@item.ScreenAt</td>
+              @if(item.Discount !=null){
+                  <td>@item.Discount %</td>
+              }else{
+                  <td>No Disscount</td>
+              }
+              <td>@item.Price</td>
+          </tr>
+      }
+  </table>
+
+  <div class="panel-footer add-item-form">
+    <!-- TODO: Add item form -->
+  </div>
+</div>
