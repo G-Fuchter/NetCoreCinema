@@ -7,7 +7,7 @@ namespace NetCoreCinema.Services
 {
 
     /*This is the actual service class:
-    This FakeMovieItemService implements the IMovieItemService interface but always returns the same array of two MovieItem*/
+    This FakeMovieItemService implements the IMovieItemService interface but always returns the same array of 4 MovieItem*/
     public class FakeMovieItemService : IMovieItemService
     {
         public Task<MovieItem[]> GetIncompleteItemsAsync()

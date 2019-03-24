@@ -45,7 +45,7 @@ namespace NetCoreCinema
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            //his line tells ASP.NET Core to use the FakeMovieItemService whenever the IMovieItemService interface is requested in a constructor (or anywhere else).
+            //This line tells ASP.NET Core to use the FakeMovieItemService whenever the IMovieItemService interface is requested in a constructor (or anywhere else).
             services.AddSingleton<IMovieItemService, FakeMovieItemService>();
         }
 
