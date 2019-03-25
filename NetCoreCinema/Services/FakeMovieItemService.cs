@@ -15,7 +15,7 @@ namespace NetCoreCinema.Services
             var item1 = new MovieItem
             {
                 Title = "The Perfect Interview: The Movie",
-                ScreenAt = DateTimeOffset.Now.AddDays(1),
+                ScreenAt = DateTime.Now.AddDays(1),
                 HasSubtitles = true,
                 Price = 14.99f,
                 Discount = 50
@@ -24,7 +24,7 @@ namespace NetCoreCinema.Services
             var item2 = new MovieItem
             {
                 Title = "Cool Awesome Apps III",
-                ScreenAt = DateTimeOffset.Now.AddDays(2),
+                ScreenAt = DateTime.Now.AddDays(3),
                 HasSubtitles = false,
                 Price = 29.99f
             };
@@ -32,7 +32,7 @@ namespace NetCoreCinema.Services
             var item3 = new MovieItem
             {
                 Title = "Hey Look At Me! I Am A Movie!",
-                ScreenAt = DateTimeOffset.Now.AddDays(5),
+                ScreenAt = DateTime.Now.AddDays(6),
                 HasSubtitles = true,
                 Price = 5.99f
             };
@@ -40,7 +40,7 @@ namespace NetCoreCinema.Services
             var item4 = new MovieItem
             {
                 Title = "Cool Awesome Apps I",
-                ScreenAt = DateTimeOffset.Now.AddDays(1),
+                ScreenAt = DateTime.Now.AddHours(2),
                 HasSubtitles = false,
                 Price = 9.99f,
                 Discount = 90

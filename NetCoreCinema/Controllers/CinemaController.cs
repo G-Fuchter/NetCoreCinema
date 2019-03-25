@@ -6,6 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 using NetCoreCinema.Services;
 using NetCoreCinema.Models;
 
+/*This is project was made using the following sources
+
+https://nbarbettini.gitbooks.io/little-asp-net-core-book/
+https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2
+https://docs.docker.com/
+https://blog.codinghorror.com/understanding-model-view-controller/
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+
+
+
+*/
+
 /* This the cinema controller 
 
 It's a best practice to keep controllers as lightweight as possible. 

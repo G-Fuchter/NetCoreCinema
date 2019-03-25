@@ -22,6 +22,6 @@ namespace NetCoreCinema.Models
 
         public  int? Discount {get; set;}
 
-        public DateTimeOffset ScreenAt { get; set; }
+        public DateTime ScreenAt { get; set; }
     }
 }
